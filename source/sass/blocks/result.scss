@@ -1,0 +1,49 @@
+.result {
+  padding: 20px;
+  padding-top: 25px;
+  background-color: #EAEAEA;
+}
+
+.result__list {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.result__title {
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.result__description {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: "Arial";
+  color: #444444;
+}
+
+.result-info {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result__name {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.result__sum {
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,30 @@
+.block-product {
+  margin-bottom: 32px;
+}
+
+.block-product__title {
+  padding: 0;
+  padding-bottom: 13px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.block-product__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.block-product__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}

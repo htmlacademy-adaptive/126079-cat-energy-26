@@ -1,0 +1,39 @@
+.advertising {
+  position: relative;
+  padding: 35px 20px;
+  background-image: url("../img/advertising-cat.png");
+  background-repeat: no-repeat;
+}
+
+.advertising::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.advertising__text {
+  position: relative;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 128px;
+}
+
+.advertising__text::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}

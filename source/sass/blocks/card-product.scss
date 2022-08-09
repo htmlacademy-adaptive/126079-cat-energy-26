@@ -1,0 +1,40 @@
+.card-product__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+}
+
+.card-product__block {
+  padding-bottom: 10px;
+}
+
+.card-product__title {
+  padding: 0;
+  padding-bottom: 18px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.card-product__list {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
+
+.card-product__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-product__image {
+  display: block;
+}
+
