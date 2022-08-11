@@ -22,11 +22,11 @@
 .card-product__list {
   padding: 0;
   margin: 0;
-  font-family: 'Arial';
+  font-family: $arial;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #444444;
+  color: $text-color;
 }
 
 .card-product__item {

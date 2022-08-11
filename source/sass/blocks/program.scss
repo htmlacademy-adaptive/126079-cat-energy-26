@@ -11,7 +11,7 @@
 .program__item {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #F2F2F2;
+  background-color: $basicgray;
 }
 
 .program__title {
@@ -20,14 +20,15 @@
   margin: 0;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
 
 .program__description {
   padding-bottom: 38px;
-  font-family: "Arial";
-  color: #444444;
+  font-family: $arial;
+  color: $text-color;
 }
 
 .program__catalog-link {

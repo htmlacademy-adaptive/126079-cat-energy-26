@@ -1,9 +1,10 @@
-@use "./blocks/fonts.scss";
-@use "./blocks/visually-hidden.scss";
+@use "./global/fonts.scss";
+@use "./global/global.scss";
+@use "./global/variables.scss";
 @use "./blocks/page.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/main-nav.scss";
-@use "./blocks/site-list";
+@use "./blocks/site-list.scss";
 @use "./blocks/slogan.scss";
 @use "./blocks/button.scss";
 @use "./blocks/program.scss";

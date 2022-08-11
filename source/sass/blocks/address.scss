@@ -5,7 +5,7 @@
 }
 
 .address__wrapper--background {
-  background-color: #f2f2f2;
+  background-color: $basicgray;
 }
 
 .address__title {
@@ -20,13 +20,12 @@
 .address__text {
   display: flex;
   flex-direction: column;
-  font-family: 'Arial';
+  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $text-color;
 }
 
 .address__map-image {
   display: block;
 }
-

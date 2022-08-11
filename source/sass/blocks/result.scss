@@ -1,7 +1,7 @@
 .result {
   padding: 20px;
   padding-top: 25px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .result__list {
@@ -14,6 +14,7 @@
   padding: 0;
   padding-bottom: 40px;
   margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
@@ -23,8 +24,8 @@
   padding: 0;
   padding-bottom: 20px;
   margin: 0;
-  font-family: "Arial";
-  color: #444444;
+  font-family: $arial;
+  color: $text-color;
 }
 
 .result-info {
@@ -35,7 +36,7 @@
 .result__name {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $text-color;
 }
 
 .result__sum {
