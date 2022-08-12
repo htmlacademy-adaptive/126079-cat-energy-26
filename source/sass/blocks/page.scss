@@ -1,5 +1,9 @@
+@import "variables";
+
 .page {
   height: 100%;
+  width: 320px;
+  margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -11,7 +15,6 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  color: #000000;
-  background-color: #d61919;
+  color: $dark;
+  background-color: $light;
 }
-

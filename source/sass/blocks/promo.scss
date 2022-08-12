@@ -1,0 +1,64 @@
+@import "variables";
+
+.promo {
+  text-align: center;
+  color: $light;
+}
+
+.promo__wrapper {
+  position: relative;
+}
+
+.promo__wrapper::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 320px;
+  height: 302px;
+  background-image: linear-gradient(
+    $lightGreen,
+    $lightGreen),
+    url("../img/promo-cat.png");
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  position: relative;
+  padding: 0;
+  padding-bottom: 25px;
+  padding-top: 27px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__intro {
+  position: relative;
+  padding: 0;
+  padding-bottom: 302px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__intro::after {
+  position: absolute;
+  top: 43px;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+  content: "";
+  width: 280px;
+  height: 270px;
+  background-image: url("../img/promo-index.png");
+  background-repeat: no-repeat;
+}
+
+.promo__button {
+  position: relative;
+}

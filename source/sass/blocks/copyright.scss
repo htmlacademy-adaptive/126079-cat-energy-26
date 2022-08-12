@@ -1,8 +1,10 @@
+@import "variables";
+
 .copyright__text {
   margin: 0;
   padding: 0;
   align-self: center;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $text-color;

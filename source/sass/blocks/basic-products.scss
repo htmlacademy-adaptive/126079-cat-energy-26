@@ -1,3 +1,5 @@
+@import "variables";
+
 .basic-products__title {
   padding: 0;
   padding-bottom: 49px;
@@ -32,6 +34,6 @@
 
 .basic-products__button--more {
   color: $text-color;
-  background-color: $basicgray;
+  background-color: $basicGray;
   width: 100%;
 }

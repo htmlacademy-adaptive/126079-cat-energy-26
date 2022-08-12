@@ -1,3 +1,5 @@
+@import "variables";
+
 .form__block {
   display: flex;
   flex-direction: column;
@@ -12,11 +14,11 @@
 
 .form__field-input {
   padding: 13px 15px 14px;
-  font-family: $oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: $basicgray;
+  color: $basicGray;
   border: 1px solid #e7e7e7;
   text-transform: uppercase;
 }
@@ -66,7 +68,7 @@
 .form-button__description {
   margin: 0;
   padding: 0;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

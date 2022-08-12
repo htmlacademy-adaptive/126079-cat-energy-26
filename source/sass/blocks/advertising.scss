@@ -1,3 +1,5 @@
+@import "variables";
+
 .advertising {
   position: relative;
   padding: 35px 20px;
@@ -12,13 +14,12 @@
   bottom: 0;
   left: 0;
   content: "";
-  background-color: $basicgreen;
-  opacity: 0.85;
+  background-color: $lightGreen;
 }
 
 .advertising__text {
   position: relative;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

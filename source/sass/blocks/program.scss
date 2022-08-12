@@ -1,3 +1,5 @@
+@import "variables";
+
 .program {
   padding: 20px;
 }
@@ -11,7 +13,7 @@
 .program__item {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: $basicgray;
+  background-color: $basicGray;
 }
 
 .program__title {
@@ -27,7 +29,7 @@
 
 .program__description {
   padding-bottom: 38px;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   color: $text-color;
 }
 
@@ -37,5 +39,5 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $dark;
 }

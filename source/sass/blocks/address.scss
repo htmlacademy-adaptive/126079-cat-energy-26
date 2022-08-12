@@ -1,3 +1,5 @@
+@import "variables";
+
 .address__wrapper {
   display: flex;
   justify-content: space-between;
@@ -5,7 +7,7 @@
 }
 
 .address__wrapper--background {
-  background-color: $basicgray;
+  background-color: $basicGray;
 }
 
 .address__title {
@@ -20,7 +22,7 @@
 .address__text {
   display: flex;
   flex-direction: column;
-  font-family: $arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $text-color;
