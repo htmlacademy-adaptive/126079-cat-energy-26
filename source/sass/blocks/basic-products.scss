@@ -1,5 +1,3 @@
-@import "variables";
-
 .basic-products__title {
   padding: 0;
   padding-bottom: 49px;
@@ -15,7 +13,7 @@
 }
 
 .basic-products__item {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .basic-products__item--more {
@@ -33,7 +31,7 @@
 }
 
 .basic-products__button--more {
-  color: $text-color;
-  background-color: $basicGray;
+  color: $color-charcoal;
+  background-color: $color-whiteSmoke;
   width: 100%;
 }

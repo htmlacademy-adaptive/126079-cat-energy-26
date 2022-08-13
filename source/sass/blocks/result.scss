@@ -1,7 +1,4 @@
-@import "variables";
-
 .result {
-  padding: 20px;
   padding-top: 25px;
   background-color: #eaeaea;
 }
@@ -26,8 +23,8 @@
   padding: 0;
   padding-bottom: 20px;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  color: $text-color;
+  font-family: $ff-Arial;
+  color: $color-charcoal;
 }
 
 .result-info {
@@ -38,7 +35,7 @@
 .result__name {
   font-size: 12px;
   line-height: 12px;
-  color: $text-color;
+  color: $color-charcoal;
 }
 
 .result__sum {

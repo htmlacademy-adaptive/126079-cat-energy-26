@@ -1,13 +1,11 @@
-@import "variables";
-
 .copyright__text {
   margin: 0;
   padding: 0;
   align-self: center;
-  font-family: "Arial", sans-serif;
+  font-family: $ff-Arial;
   font-size: 16px;
   line-height: 18px;
-  color: $text-color;
+  color: $color-charcoal;
 }
 
 .copyright__link {
@@ -17,5 +15,5 @@
 }
 
 .copyright__svg {
-  fill: $svg-color;
+  fill: $color-dimGray;
 }

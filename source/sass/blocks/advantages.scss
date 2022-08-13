@@ -1,9 +1,3 @@
-@import "variables";
-
-.advantages {
-  padding: 20px;
-}
-
 .advantages__title {
   padding: 0;
   padding-bottom: 40px;
@@ -17,8 +11,8 @@
 .advantages__list {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  color: $text-color;
+  font-family: $ff-Arial;
+  color: $color-charcoal;
   list-style-type: none;
 }
 

@@ -1,5 +1,65 @@
-@import "variables";
-
 .main-nav {
-  background-color: $light;
+  background-color: $color-white;
 }
+
+.main-nav__toggle {
+  padding: 0;
+  margin: 24px 0 24px 65px;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: $color-black;
+  border: none;
+}
+
+.main-nav__toggle::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: $color-black;
+}
+
+.main-nav__toggle::after {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: $color-black;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $color-black;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

@@ -1,5 +1,3 @@
-@import "variables";
-
 .button {
   display: block;
   width: 100%;
@@ -7,8 +5,8 @@
   margin: 0;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: $basicGreen;
-  color: $light;
+  background-color: $color-apple;
+  color: $color-white;
   border: none;
   align-items: center;
   text-align: center;
