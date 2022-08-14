@@ -1,0 +1,32 @@
+.address__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-whiteSmoke;
+}
+
+.address__wrapper--index {
+  background-color: $color-white;
+}
+
+.address__title {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__text {
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-Arial;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-charcoal;
+}
+
+.address__map-image {
+  display: block;
+}

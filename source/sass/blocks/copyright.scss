@@ -1,0 +1,19 @@
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  font-family: $ff-Arial;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-charcoal;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.copyright__svg {
+  fill: $color-dimGray;
+}
