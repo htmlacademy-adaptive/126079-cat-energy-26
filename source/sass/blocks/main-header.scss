@@ -1,16 +1,14 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   background-color: $color-white;
-  color: $color-black;
 }
-
-/*
 
 @media (min-width: $tablet-width) {
   .main-header {
     width: 708px;
-    margin: 0 auto;
+    margin: 35px auto;
   }
 }
 
@@ -19,22 +17,8 @@
     width: 1220px;
     margin: 0 auto;
   }
-}
 
-.main-header__logo {
-  height: 85px;
-}
-
-@media (min-width: $tablet-width) {
   .main-header__logo {
-    order: 2;
-    height: 400px;
+    padding-top: 54px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .main-header__logo {
-    height: 648px;
-  }
-}
-*/

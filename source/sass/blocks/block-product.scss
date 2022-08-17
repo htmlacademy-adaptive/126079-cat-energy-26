@@ -1,5 +1,6 @@
 .block-product {
-  margin-bottom: 32px;
+  margin-bottom: 13px;
+  padding-bottom: 19px;
 }
 
 .block-product__title {
@@ -22,9 +23,29 @@
 .block-product__item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $color-charcoal;
+}
+
+@media (min-width: $tablet-width) {
+  .block-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 28px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-product {
+    display: grid;
+    grid-template-columns: 276px 300px 244px;
+    column-gap: 38px;
+    padding: 15px 0 17px;
+    margin: 0;
+  }
 }

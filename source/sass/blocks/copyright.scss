@@ -15,5 +15,15 @@
 }
 
 .copyright__svg {
-  fill: $color-dimGray;
+  fill: $color-dim-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    justify-content: baseline;
+  }
+
+  .copyright__text {
+    padding-right: 22px;
+  }
 }

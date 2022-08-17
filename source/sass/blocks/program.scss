@@ -7,7 +7,7 @@
 .program__item {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: $color-whiteSmoke;
+  background-color: $color-white-smoke;
 }
 
 .program__title {
@@ -47,4 +47,67 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .program__item {
+    padding: 77px 62px 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+  }
+
+  .program__description {
+    padding-right: 254px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__catalog-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .program__title {
+    padding: 0;
+    padding-bottom: 24px;
+  }
+
+  .program__title::after {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__list {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+  }
+
+  .program__title {
+    padding-left: 162px;
+    padding-bottom: 73px;
+  }
+
+  .program__title::after {
+    top: -30px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .program__description {
+    padding: 0;
+    margin-bottom: 23px;
+  }
 }

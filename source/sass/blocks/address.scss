@@ -1,7 +1,10 @@
+.address {
+  background-color: $color-white-smoke;
+}
+
 .address__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: $color-whiteSmoke;
 }
 
 .address__wrapper--index {
@@ -29,4 +32,26 @@
 
 .address__map-image {
   display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .address__wrapper {
+    padding: 56px 70px;
+  }
+
+  .address__street {
+    padding-bottom: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: 565px;
+  }
+
+  .address__wrapper {
+    padding: 56px 80px;
+    background-color: $color-white;
+  }
 }

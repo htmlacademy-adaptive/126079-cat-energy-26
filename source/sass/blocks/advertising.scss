@@ -3,6 +3,8 @@
   padding: 35px 20px;
   background-image: url("../img/advertising-cat.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .advertising::before {
@@ -17,6 +19,8 @@
 
 .advertising__text {
   position: relative;
+  padding: 0;
+  margin: 0;
   font-family: $ff-Arial;
   font-weight: 400;
   font-size: 16px;
@@ -36,4 +40,32 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+@media (min-width: $tablet-width) {
+  .advertising {
+    padding: 0;
+  }
+
+  .advertising__text {
+    text-align: start;
+    padding: 71px 124px 69px 422px;
+  }
+
+  .advertising__text::after {
+    background-position: left 77px center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advertising__text {
+    padding: 0;
+    padding-top: 185px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .advertising__text::after {
+    background-position: center top 56px;
+  }
 }

@@ -1,10 +1,11 @@
 .main-nav {
+  margin-top: 20px;
   background-color: $color-white;
 }
 
 .main-nav__toggle {
   padding: 0;
-  margin: 24px 0 24px 65px;
+  margin-left: 65px;
   position: relative;
   width: 24px;
   height: 2px;
@@ -14,7 +15,7 @@
 
 .main-nav__toggle::before {
   position: absolute;
-  top: 8px;
+  bottom: 8px;
   left: 0;
   content: "";
   width: 24px;
@@ -24,7 +25,7 @@
 
 .main-nav__toggle::after {
   position: absolute;
-  top: 16px;
+  bottom: 16px;
   left: 0;
   content: "";
   width: 24px;
@@ -59,7 +60,76 @@
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
-    flex-direction: column;
+  }
+
+  .main-nav__link {
+    padding: 15px 17px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item--current {
+    position: relative;
+  }
+
+  .main-nav__item--current::after {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: -8px;
+    height: 2px;
+    background-color: $color-apple;
+    content: "";
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav--index {
+    z-index: 1;
+    position: relative;
+    margin: 0;
+    margin-bottom: 52px;
+    padding: 69px 93px 585px 115px;
+  }
+
+  .main-nav--index::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    background-image: linear-gradient(
+      rgba($color-apple, 0.85),
+      rgba($color-apple, 0.85)),
+      url("../img/index-background-cat.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .main-nav__list {
+    width: 100%;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-nav--index .main-nav__link {
+    color: $color-white;
+  }
+
+  .main-nav--index .main-nav__item--current::after {
+    background-color: $color-white;
+  }
+}

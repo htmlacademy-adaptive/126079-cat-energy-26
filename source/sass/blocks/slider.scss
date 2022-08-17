@@ -3,3 +3,10 @@
   margin: 0;
   list-style-type: none;
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    text-align: end;
+    margin-top: -400px;
+  }
+}

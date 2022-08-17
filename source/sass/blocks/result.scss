@@ -4,46 +4,125 @@
 }
 
 .result__list {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
   padding: 0;
-  padding-bottom: 20px;
   margin: 0;
+  margin-bottom: 20px;
+}
+
+.result__item {
+  border: 1px solid $color-very-light-grey;
+  border-radius: 3px;
 }
 
 .result__title {
   padding: 0;
-  padding-bottom: 40px;
   margin: 0;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
 }
 
 .result__description {
   padding: 0;
-  padding-bottom: 20px;
   margin: 0;
+  margin-bottom: 20px;
   font-family: $ff-Arial;
   color: $color-charcoal;
 }
 
-.result-info {
+.result__info {
+  padding-top: 15px;
+  margin-bottom: 8px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 }
 
 .result__name {
+  margin: 0;
+  padding: 0 35px;
+  font-family: $ff-Arial;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   color: $color-charcoal;
 }
 
 .result__sum {
-  padding: 0;
   padding-bottom: 40px;
-  margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .result__title {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .result__description {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .result__list {
+    grid-template-columns: 162px 162px;
+    column-gap: 42px;
+  }
+
+  .result-info {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .result__sum {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .result__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .result__sum-info {
+    margin-bottom: 9px;
+  }
+
+  .result__sum {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result__sum {
+    margin-top: 55px;
+    text-align: start;
+  }
+
+  .result__sum-info {
+    margin-right: 63px;
+  }
+
+  .result__description {
+    width: 436px;
+  }
 }

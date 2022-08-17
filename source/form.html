@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+    <header class="main-header container">
+      <a class="main-header__logo" href="index.html">
         <img src="../img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
       </a>
       <nav class="main-nav">
@@ -17,13 +17,13 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
@@ -34,68 +34,76 @@
         <h1 class="form-container__title">Подбор программы</h1>
         <p class="form-container__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__block">
-            <h2 class="visually-hidden">Данные кота</h2>
-            <label class="form__field">
-              <span class="form__field-label form__label">Имя:*</span>
-              <input class="form__field-input" type="text" name="form-field-name" placeholder="барсик" required>
-            </label>
-            <label class="form__field">
-              <span class="form__field-label form__label">Вес (кг):*</span>
-              <input class="form__field-input" type="number" name="form-field-weight" placeholder="7" required>
-            </label>
-            <label class="form__field">
-              <span class="form__field-label form__label">Возраст (лет):</span>
-              <input class="form__field-input" type="number" name="form-field-age" placeholder="7">
-            </label>
+          <div class="form__block form__block--radio-pet">
+            <div class="form__block form__block--pet">
+              <h2 class="visually-hidden">Данные кота</h2>
+              <label class="form__field">
+                <span class="form__field-label form__label">Имя:*</span>
+                <input class="form__field-input" type="text" name="form-field-name" placeholder="барсик" required>
+              </label>
+              <label class="form__field">
+                <span class="form__field-label form__label">Вес (кг):*</span>
+                <input class="form__field-input" type="number" name="form-field-weight" placeholder="7" required>
+              </label>
+              <label class="form__field">
+                <span class="form__field-label form__label">Возраст (лет):</span>
+                <input class="form__field-input" type="number" name="form-field-age" placeholder="7">
+              </label>
+            </div>
+            <div class="form__block form__block--radio">
+              <h2 class="visually-hidden">Цель</h2>
+              <ul class="form__list">
+                <li class="form__list-item">
+                  <label class="form__radio">
+                    <input class="form__radio-input" type="radio" name="goal" value="weight-loss" checked>
+                    <span class="form__radio-label form__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="form__radio">
+                    <input class="form__radio-input" type="radio" name="goal" value="weight-gain">
+                    <span class="form__radio-label form__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__list-item">
+                  <label class="form__radio">
+                    <input class="form__radio-input" type="radio" name="goal" value="advice">
+                    <span class="form__radio-label form__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Цель</legend>
+          <div class="form__block form__block--user">
+            <h2 class="form__title">Контактные данные (владельца кота)</h2>
             <ul class="form__list">
-              <li class="form__list-item">
-                <label class="form__radio">
-                  <input class="form__radio-input" type="radio" name="goal" value="weight-loss" checked>
-                  <span class="form__radio-label form__label">Похудение</span>
+              <li class="form__item">
+                <label class="form__field">
+                  <span class="form__field-label form__label">E-mail:*</span>
+                  <input class="form__field-input" type="email" name="form-email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
-              <li class="form__list-item">
-                <label class="form__radio">
-                  <input class="form__radio-input" type="radio" name="goal" value="weight-gain">
-                  <span class="form__radio-label form__label">Набор массы</span>
-                </label>
-              </li>
-              <li class="form__list-item">
-                <label class="form__radio">
-                  <input class="form__radio-input" type="radio" name="goal" value="advice">
-                  <span class="form__radio-label form__label">Не знаю (Нужен ваш совет)</span>
+              <li class="form__item">
+                <label class="form__field">
+                  <span class="form__field-label form__label">Телефон:*</span>
+                  <input class="form__field-input" type="tel" name="form-tel" placeholder="8 (960) 900-60-90" required>
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <div class="form__block">
-            <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <label class="form__field">
-              <span class="form__field-label form__label">E-mail:*</span>
-              <input class="form__field-input" type="email" name="form-email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="form__field">
-              <span class="form__field-label form__label">Телефон:*</span>
-              <input class="form__field-input" type="tel" name="form-tel" placeholder="8 (960) 900-60-90" required>
-            </label>
           </div>
-          <div class="form__block">
+          <div class="form__block form__block--comment">
             <h2 class="form__title">Комментарий</h2>
             <label class="form__field--textarea">
               <textarea class="form__field-input form__field-input--textarea" name="form-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
-          <div class="form__block">
+          <div class="form__block form__block--checkbox">
             <h2 class="form__title">Дополнительно</h2>
             <ul class="form__list">
               <li class="form__list-item">
                 <label class="form__checkbox">
                   <input class="form-field control input" type="checkbox" name="addition" value="sugar" checked>
-                  <span class="form-field__label form__label">Сахарозаменитель</span>
+                  <span class="form__checkbox-label form__label">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__list-item">
@@ -118,9 +126,9 @@
               </li>
             </ul>
           </div>
-          <div class="form__block">
-            <button class="button form-button" type="submit">Отправить заявку</button>
-            <p class="form-button__description">* — Обязательные поля</p>
+          <div class="form__block form__block--button">
+            <button class="button form__button" type="submit">Отправить заявку</button>
+            <p class="form__button-description">* — Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -169,14 +177,14 @@
               </a>
             </li>
           </ul>
-          <div class="main-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
-              <svg class="copyright__svg" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
-              </svg>
-            </a>
-          </div>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <svg class="copyright__svg" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

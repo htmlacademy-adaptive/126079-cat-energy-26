@@ -4,18 +4,36 @@
 
 .form-container__title {
   padding: 0;
-  padding-bottom: 37px;
   margin: 0;
+  margin-bottom: 37px;
   font-size: 36px;
   line-height: 36px;
 }
 
 .form-container__description {
   padding: 0;
-  padding-bottom: 39px;
   margin: 0;
+  margin-bottom: 39px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-container {
+    padding: 30px;
+  }
+
+  .form-container__title {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-container__description {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
