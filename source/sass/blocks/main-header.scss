@@ -2,23 +2,16 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+
   background-color: $color-white;
-}
 
-@media (min-width: $tablet-width) {
-  .main-header {
-    width: 708px;
-    margin: 35px auto;
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-header {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-  }
-
-  .main-header__logo {
     padding-top: 54px;
   }
 }

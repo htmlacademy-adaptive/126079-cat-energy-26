@@ -1,5 +1,6 @@
 .main-footer {
   padding-top: 40px;
+
   background-color: $color-white-smoke;
 }
 
@@ -9,13 +10,15 @@
   margin-bottom: 52px;
 }
 
-@media (min-width: $tablet-width) {
-  .main-footer__wrapper {
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .copyright__link {
+.copyright__link {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

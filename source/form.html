@@ -12,7 +12,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="../img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -75,7 +75,9 @@
             </div>
           </div>
           <div class="form__block form__block--user">
-            <h2 class="form__title">Контактные данные (владельца кота)</h2>
+            <div class="form__title-line">
+              <h2 class="form__title">Контактные данные (владельца кота)</h2>
+            </div>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__field">
@@ -92,13 +94,17 @@
             </ul>
           </div>
           <div class="form__block form__block--comment">
-            <h2 class="form__title">Комментарий</h2>
+            <div class="form__title-line">
+              <h2 class="form__title">Комментарий</h2>
+            </div>
             <label class="form__field--textarea">
               <textarea class="form__field-input form__field-input--textarea" name="form-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
           <div class="form__block form__block--checkbox">
-            <h2 class="form__title">Дополнительно</h2>
+            <div class="form__title-line">
+              <h2 class="form__title">Дополнительно</h2>
+            </div>
             <ul class="form__list">
               <li class="form__list-item">
                 <label class="form__checkbox">
@@ -141,8 +147,9 @@
           </div>
         </div>
         <div class="address__map">
-          <img class="address__map-image" src="../img/map.png" width="320" height="362" alt="Адрес на карте.">
-         </div>
+          <iframe class="address__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470468!2d30.318562733346486!3d59.938716423907195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660939136505!5m2!1sru!2sru"
+            width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -188,5 +195,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
