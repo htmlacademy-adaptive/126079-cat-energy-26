@@ -1,6 +1,7 @@
 .advertising {
   position: relative;
 
+  margin-bottom: 35px;
   padding: 35px 20px;
 
   background-image: url("../img/advertising-cat.png");
@@ -27,7 +28,8 @@
 .advertising__text {
   position: relative;
 
-  margin: 0;
+  width: 161px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 128px;
 
@@ -39,15 +41,13 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 124px 69px 422px;
+    padding: 71px 124px 69px 60%;
 
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    padding-top: 185px;
+    padding: 185px 0 42px;
 
     text-align: center;
   }

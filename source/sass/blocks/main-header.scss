@@ -2,16 +2,26 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 20px;
 
-  background-color: $color-white;
+  border-bottom: 1px solid $color-whisper;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
+
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 90%;
+    max-width: 1220px;
     margin: 0 auto;
-    padding-top: 54px;
+    padding: 0;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
   }
 }

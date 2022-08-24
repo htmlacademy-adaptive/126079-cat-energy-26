@@ -1,3 +1,15 @@
+.program {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 73px;
+  }
+}
+
 .program__list {
   margin: 0;
   padding: 0;
@@ -7,8 +19,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
 
-    column-gap: 80px;
-
+    gap: 20px 80px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -22,6 +33,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding: 77px 62px 53px 52px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -148,7 +167,7 @@
   font-family: $ff-arial;
   color: $color-charcoal;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-gainsboro;
 
   @media (min-width: $tablet-width) {
     padding-right: 254px;

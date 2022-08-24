@@ -1,0 +1,32 @@
+.header-intro {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    width: 100%;
+    height: 696px;
+
+    background-color: $color-dim-gray;
+    background-image: linear-gradient(
+    to right,
+    $color-white 50%,
+      rgba($color-apple, 0.85) 50%,
+      rgba($color-apple, 0.85) 50%),
+      url("../img/index-background-cat.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.header-intro__container {
+  @media (min-width: $desktop-width) {
+    max-width: 1330px;
+    margin: 0 auto;
+  }
+
+  & .main-header {
+    @media (min-width: $desktop-width) {
+      min-width: 1024px;
+    }
+  }
+}
+
