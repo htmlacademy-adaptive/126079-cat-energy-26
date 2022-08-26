@@ -1,37 +1,114 @@
+.basic-products {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 76px;
+  }
+}
+
 .basic-products__title {
-  padding: 0;
-  padding-bottom: 49px;
-  margin: 0;
+  margin: 0 0 41px;
+
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 150px;
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border: none;
+  }
 }
 
 .basic-products__list {
-  padding: 0;
+  position: relative;
+
   margin: 0;
+  padding: 0;
+
   list-style-type: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    width: 125%;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    border: none;
+
+    gap: 141px 60px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 144px 5.6%;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .basic-products__item {
-  margin-bottom: 20px;
-}
+  position: relative;
 
-.basic-products__item--more {
-  padding-top: 36px 20px 25px;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -40px;
 
-.basic-products__title--more {
-  padding-bottom: 8px;
-  text-align: center;
+    width: 125%;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $color-white-smoke;
+    border: none;
+  }
 }
 
 .basic-products__text {
   padding-bottom: 21px;
+
   text-align: center;
 }
 
-.basic-products__button--more {
-  color: $color-charcoal;
-  background-color: $color-whiteSmoke;
-  width: 100%;
+.basic-products__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

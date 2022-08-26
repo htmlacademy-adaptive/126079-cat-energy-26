@@ -1,10 +1,13 @@
 .page {
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  font-family: $ff-Oswald;
+  overflow-x: hidden;
+
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: $ff-oswald;
 }
 
 .page__body {
@@ -12,6 +15,8 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+
   color: $color-black;
+
   background-color: $color-white;
 }

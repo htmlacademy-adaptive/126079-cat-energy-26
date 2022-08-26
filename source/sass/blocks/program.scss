@@ -1,50 +1,218 @@
+.program {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 73px;
+  }
+}
+
 .program__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 20px 80px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .program__item {
-  padding: 20px;
   margin-bottom: 20px;
-  background-color: $color-whiteSmoke;
+  padding: 20px;
+
+  background-color: $color-white-smoke;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 62px 53px 52px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .program__title {
   position: relative;
-  padding: 0 0 29px 71px;
+
   margin: 0;
+  padding: 0 0 29px 71px;
+
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .program__title::after {
+  content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  content: "";
+
   background-color: $color-apple;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    bottom: 0;
+    left: auto;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -30px;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.program__item--pro {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: left 13px top 24px;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+      background-position: right 28px center;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: left 33px top 47px;
+      background-size: 134px 100px;
+    }
+  }
+}
+
+.program__item--slim {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: left 27px top 17px;
+    background-size: 36px 50px;
+
+    @media (min-width: $tablet-width) {
+      background-position: right 92px bottom 97px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: left 67px top 41px;
+      background-size: 70px 97px;
+    }
+  }
 }
 
 .program__description {
-  padding-bottom: 38px;
-  font-family: $ff-Arial;
+  padding-bottom: 23px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-arial;
   color: $color-charcoal;
+
+  border-bottom: 1px solid $color-gainsboro;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 254px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    padding: 0;
+  }
 }
 
 .program__catalog-link {
+  position: relative;
+  z-index: 1;
+
+  padding-right: 57px;
+
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-black;
+
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+
+  &:hover {
+    background-image: url("../img/arrow-active.svg");
+    background-position: right center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

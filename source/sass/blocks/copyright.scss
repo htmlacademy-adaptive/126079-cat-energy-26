@@ -1,19 +1,41 @@
 .copyright__text {
+  align-self: center;
   margin: 0;
   padding: 0;
-  align-self: center;
-  font-family: $ff-Arial;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: $ff-arial;
   color: $color-charcoal;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
+
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: baseline;
+  }
 }
 
 .copyright__svg {
-  fill: $color-dimGray;
+  fill: $color-dim-gray;
+
+  &:hover {
+    fill: $color-apple;
+  }
+
+  &:active {
+    fill: $color-apple;
+  }
 }

@@ -1,39 +1,80 @@
 .advertising {
   position: relative;
+
+  height: 100%;
+  margin-bottom: 35px;
   padding: 35px 20px;
+
   background-image: url("../img/advertising-cat.png");
   background-repeat: no-repeat;
-}
+  background-position: center;
+  background-size: cover;
 
-.advertising::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  background-color: rgba($color-apple, 0.85);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba($color-apple, 0.85);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advertising__text {
   position: relative;
-  font-family: $ff-Arial;
+
+  width: 161px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 128px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: $ff-arial;
   text-align: center;
   color: $color-white;
-  padding-top: 128px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 60%;
+
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 0 0;
+
+    text-align: center;
+  }
 }
 
 .advertising__text::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  content: "";
+
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 77px center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center top 56px;
+  }
 }
