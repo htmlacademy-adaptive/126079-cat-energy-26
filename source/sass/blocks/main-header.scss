@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 20px;
 
@@ -8,20 +9,26 @@
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
+    padding: 30px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 93%;
+    min-width: 904px;
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0;
+    padding: 60px;
   }
 }
 
-.main-header__logo {
-  @media (min-width: $desktop-width) {
-    margin-top: 53px;
+.main-header__logo:not(.main-header__logo--current) {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

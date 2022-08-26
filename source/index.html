@@ -11,7 +11,7 @@
     <div class="header-intro">
       <div class="header-intro__container">
         <header class="main-header">
-          <a class="main-header__logo">
+          <a class="main-header__logo  main-header__logo--current">
             <img src="../img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
           </a>
           <nav class="main-nav main-nav--index main-nav--closed">
@@ -78,8 +78,10 @@
       </section>
       <section class="result">
         <div class="container result__container">
-          <div class="result__content">
+          <div class="result__header">
             <h2 class="result__title">Живой пример</h2>
+          </div>
+          <div class="result__content">
             <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <div class="result__block">
               <dl class="result__list">
@@ -99,9 +101,15 @@
             </div>
           </div>
           <div class="slider">
-            <div class="slider__img slider__img-background"></div>
-            <div class="slider__img slider__img-foreground"></div>
-            <input class="slider__range" type="range" min="1" max="100" value="50" name="slider-range">
+            <div class="slider__range">
+              <button class="slider__range-button" type="button"></button>
+            </div>
+            <div class="slider__before">
+              <img class="slider__before-image slider__image" src="../img/cat-fat.png" width="560" height="512" alt="Пухлый кот до смены рациона.">
+            </div>
+            <div class="slider__after">
+              <img class="slider__after-image slider__image" src="../img/cat-skinny.png" width="560" height="512" alt="Похудевший кот.">
+            </div>
           </div>
         </div>
       </section>

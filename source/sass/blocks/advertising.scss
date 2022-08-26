@@ -1,28 +1,33 @@
 .advertising {
   position: relative;
 
+  height: 100%;
   margin-bottom: 35px;
   padding: 35px 20px;
 
   background-image: url("../img/advertising-cat.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba($color-apple, 0.85);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
 
-.advertising::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-color: rgba($color-apple, 0.85);
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advertising__text {
@@ -47,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 0 42px;
+    padding: 185px 0 0;
 
     text-align: center;
   }

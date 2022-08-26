@@ -3,6 +3,7 @@
   margin: 0;
   padding: 10px 0;
 
+  font-family: $ff-oswald;
   text-align: center;
   color: $color-white;
   text-transform: uppercase;
@@ -10,6 +11,7 @@
 
   background-color: $color-apple;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-limeade;

@@ -14,6 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 904px;
+    max-width: 1220px;
     margin: 110px auto 0;
 
     background-color: $color-transparent;
@@ -42,10 +44,7 @@
   width: 100%;
   min-height: 302px;
 
-  background-image: linear-gradient(
-    rgba($color-apple, 0.85),
-    rgba($color-apple, 0.85)),
-    url("../img/promo-cat.png");
+  background-image: linear-gradient(rgba($color-apple, 0.85), rgba($color-apple, 0.85)), url("../img/promo-cat.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 100%;
