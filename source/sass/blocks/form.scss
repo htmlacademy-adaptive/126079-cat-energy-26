@@ -135,6 +135,14 @@
   &--email {
     padding-right: 2px;
   }
+
+  &:hover .form__svg {
+    color: $color-apple;
+  }
+
+  &:active .form__svg {
+    color: rgba($color-apple, 0.3);
+  }
 }
 
 .form__block-textarea {

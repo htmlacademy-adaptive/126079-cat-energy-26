@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Функциональное питание для котов "Cat Energy"</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -12,9 +16,9 @@
       <div class="header-intro__container">
         <header class="main-header">
           <a class="main-header__logo  main-header__logo--current">
-            <img src="../img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
+            <img class="main-header__logo-image" src="../img/logo.svg" width="191" height="38" alt="Логотип Cat Energy.">
           </a>
-          <nav class="main-nav main-nav--index main-nav--closed">
+          <nav class="main-nav main-nav--index main-nav--opened">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -37,7 +41,10 @@
             <p class="promo__intro">Занялся собой? Займись котом!</p>
           </div>
           <div class="promo__block">
-            <img class="promo__image" src="../img/promo-index.png" width="280" height="270" alt=".">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/promo-index-tablet.png 1x, ../img/promo-index-tablet@2x.png 2x">
+              <img class="promo__image" src="../img/promo-index-mobile.png" srcset="../img/promo-index-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания для котов.">
+            </picture>
             <a class="button promo__button" href="form.html">Подобрать программу</a>
           </div>
         </div>
@@ -105,10 +112,16 @@
               <button class="slider__range-button" type="button"></button>
             </div>
             <div class="slider__before">
-              <img class="slider__before-image slider__image" src="../img/cat-fat.png" width="560" height="512" alt="Пухлый кот до смены рациона.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/cat-before-tablet.png 1x, ../img/cat-before-tablet@2x.png 2x">
+                <img class="slider__before-image slider__image" src="../img/cat-before-mobile.png" srcset="../img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пухлый кот до смены рациона.">
+              </picture>
             </div>
             <div class="slider__after">
-              <img class="slider__after-image slider__image" src="../img/cat-skinny.png" width="560" height="512" alt="Похудевший кот.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/cat-after-tablet.png 1x, ../img/cat-after-tablet@2x.png 2x">
+                <img class="slider__after-image slider__image" src="../img/cat-after-mobile.png" srcset="../img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после смены рациона.">
+              </picture>
             </div>
           </div>
         </div>
