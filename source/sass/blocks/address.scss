@@ -4,7 +4,7 @@
   background-color: $color-white;
 
   @media (min-width: $desktop-width) {
-    padding: 95px 0 107px 50px;
+    padding: 95px 0 107px 110px;
   }
 }
 
@@ -30,7 +30,7 @@
 
     background-color: $color-white;
 
-    gap: 20px 87px;
+    gap: 20px 80px;
     grid-template-columns: 1fr 1fr;
   }
 }
