@@ -1,4 +1,6 @@
 .advantages {
+  padding-bottom: 46px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 46px;
 
@@ -58,36 +60,19 @@
 
   counter-increment: program-counter;
 
-  @media (min-width: $tablet-width) {
-    min-height: 280px;
-    margin: 0;
-    padding: 0;
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: counter(program-counter);
+      position: absolute;
+      z-index: -1;
+      top: 130px;
+      left: 120px;
 
-    font-size: 16px;
-    line-height: 24px;
+      font-size: 280px;
+      font-family: $ff-oswald;
+      color: $color-white-smoke;
+    }
   }
-}
-
-.advantages__item::after {
-  @media (min-width: $tablet-width) {
-    content: counter(program-counter);
-    position: absolute;
-    top: 130px;
-    left: 120px;
-
-    font-size: 280px;
-    font-family: $ff-oswald;
-    color: $color-white-smoke;
-  }
-}
-
-.advantages__description {
-  position: relative;
-  z-index: 2;
-
-  margin: 0;
-  padding: 0;
-  padding-left: 80px;
 
   &--healthy::after,
   &--simply::after,
@@ -96,72 +81,59 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
 
     width: 60px;
     height: 60px;
+    background-color: $color-apple;
 
     background-repeat: no-repeat;
-    background-position: left 15px center;
+    background-position: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--healthy::after {
     background-image: url("../img/advantages-leaf.svg");
-    background-size: 30px 32px;
   }
 
   &--simply::after {
     background-image: url("../img/advantages-tub.svg");
-    background-size: 29px 31px;
   }
 
   &--tasty::after {
     background-image: url("../img/advantages-eat.svg");
-    background-position: left 18px center;
-    background-size: 25px 30px;
   }
 
   &--fast::after {
     background-image: url("../img/advantages-alarm.svg");
-    background-position: left 14px center;
-    background-size: 32px 33px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 151px;
+    min-height: 280px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
     padding-left: 0;
-
-    &--healthy::after,
-    &--simply::after,
-    &--tasty::after,
-    &--fast::after {
-      top: 37px;
-
-      width: 80px;
-      height: 80px;
-
-      background-position: left 26px center;
-    }
+    padding-top: 150px;
   }
-}
-
-.advantages__description::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $color-apple;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
-
-    width: 80px;
-    height: 80px;
+    width: 100%;
   }
 }
+

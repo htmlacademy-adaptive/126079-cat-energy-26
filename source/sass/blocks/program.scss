@@ -26,6 +26,10 @@
 }
 
 .program__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 20px;
   padding: 20px;
 
@@ -40,14 +44,109 @@
     }
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $color-apple;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: auto;
+      right: 61px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.program__title {
-  position: relative;
 
+.program__item--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 29px;
+
+    width: 36px;
+    height: 50px;
+
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      left: auto;
+      right: 92px;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.program__item--pro {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 135px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+      background-size: 268px 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 67px;
+      left: 33px;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
+  }
+}
+
+.program__title {
   margin: 0;
   padding: 0 0 29px 71px;
 
@@ -58,6 +157,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 400px;
     padding: 0;
     padding-bottom: 24px;
 
@@ -69,94 +169,6 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 73px;
     padding-left: 162px;
-  }
-}
-
-.program__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 50px;
-  height: 50px;
-
-  background-color: $color-apple;
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: 0;
-    bottom: 0;
-    left: auto;
-
-    width: 200px;
-    height: 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -30px;
-    left: 0;
-
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.program__item--pro {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background-image: url("../img/cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: left 13px top 24px;
-    background-size: 67px 50px;
-
-    @media (min-width: $tablet-width) {
-      background-position: right 28px center;
-      background-size: 268px 200px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: left 33px top 47px;
-      background-size: 134px 100px;
-    }
-  }
-}
-
-.program__item--slim {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: left 27px top 17px;
-    background-size: 36px 50px;
-
-    @media (min-width: $tablet-width) {
-      background-position: right 92px bottom 97px;
-      background-size: 140px 194px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: left 67px top 41px;
-      background-size: 70px 97px;
-    }
   }
 }
 
@@ -187,7 +199,8 @@
 
 .program__catalog-link {
   position: relative;
-  z-index: 1;
+  margin-top: auto;
+  align-self: start;
 
   padding-right: 57px;
 
