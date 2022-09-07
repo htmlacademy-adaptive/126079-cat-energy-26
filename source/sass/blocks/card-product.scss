@@ -7,12 +7,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 30px 39px 36px;
+    padding: 30px 36px;
     background-color: $color-white-smoke;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 30px 40px 35px;
+    padding: 40px 38px;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }
 
@@ -144,7 +144,7 @@
 }
 
 .card-product__button--more {
-  width: 100%;
+  width: auto;
 
   color: $color-charcoal;
 
