@@ -16,7 +16,7 @@
   background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 58px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,11 +26,11 @@
     display: grid;
     box-sizing: border-box;
     width: 565px;
-    padding: 56px 80px;
+    padding: 56px 80px 61px;
 
     background-color: $color-white;
 
-    gap: 20px 80px;
+    gap: 20px 85px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -72,6 +72,11 @@
     width: 160px;
 
     font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

@@ -2,8 +2,7 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
-    padding-bottom: 72px;
+    padding: 35px 60px 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,9 +16,9 @@
   margin-bottom: 37px;
   padding: 27px 0 0;
 
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;

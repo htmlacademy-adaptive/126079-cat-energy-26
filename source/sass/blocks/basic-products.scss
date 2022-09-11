@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,9 +15,9 @@
 .basic-products__title {
   margin: 0 0 41px;
 
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 163px;
