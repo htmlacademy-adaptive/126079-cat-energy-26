@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 30px 36px;
+    padding: 34px 36px 39px;
     background-color: $color-white-smoke;
   }
 
@@ -18,7 +18,7 @@
 
 .card-product__wrapper {
   display: flex;
-  margin: 0 auto 13px;
+  margin: 0 auto 12px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -27,8 +27,8 @@
 }
 
 .card-product__block {
-  width: 50%;
-  margin-bottom: 9px;
+  min-width: 142px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -39,7 +39,7 @@
 .card-product__title {
   align-items: center;
   max-width: 76px;
-  margin: 0 auto 18px;
+  margin: 0 0 15px;
   padding: 0;
 
   font-weight: 400;
@@ -50,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 150px;
-    margin-bottom: 21px;
+    margin: 0 auto 10px;
 
     font-size: 20px;
     line-height: 24px;
@@ -108,11 +108,12 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  font-family: $ff-arial;
   color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
-    margin: 0 auto 87px;
+    margin: 0 auto 80px;
     padding: 0;
 
     font-size: 16px;
@@ -133,7 +134,7 @@
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;
-    margin: -103px auto 34px;
+    margin: -108px auto 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,10 +144,16 @@
   }
 }
 
+.card-product__button {
+  box-sizing: border-box;
+  min-height: 40px;
+}
+
 .card-product__button--more {
   width: auto;
 
   color: $color-charcoal;
+  font-size: 16px;
 
   background-color: $color-white-smoke;
 
@@ -176,7 +183,7 @@
 
   width: 30px;
   height: 30px;
-  margin: 0 auto 23px;
+  margin: 5px auto 23px;
 
   background-color: $color-transparent;
 

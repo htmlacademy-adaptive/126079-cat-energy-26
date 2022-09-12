@@ -13,29 +13,32 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 42px;
-    left: 55%;
+    top: 25px;
+    left: 53%;
 
     justify-content: space-between;
   }
 }
 
 .slider__image {
-  height: 100%;
   width: 100%;
+  height: 100%;
 
   object-fit: cover;
 }
 
 .slider__before {
   position: relative;
+
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
 .slider__after {
   position: absolute;
   z-index: 1;
+
   height: 100%;
+
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 

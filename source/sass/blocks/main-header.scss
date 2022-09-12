@@ -4,13 +4,14 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 13px;
 
   border-bottom: 1px solid $color-whisper;
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
-    padding: 30px;
     width: calc(100% - 40px);
+    padding: 30px;
 
     border: none;
   }
@@ -18,12 +19,23 @@
   @media (min-width: $desktop-width) {
     width: calc(100% - 80px);
     max-width: 1220px;
-    padding: 60px;
+    padding: 50px 60px;
   }
 }
 
 .main-header__logo {
-  align-self: flex-start;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 66px;
+  }
 }
 
 .main-header__logo:not(.main-header__logo--current) {

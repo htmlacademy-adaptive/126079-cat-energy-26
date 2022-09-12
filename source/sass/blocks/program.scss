@@ -1,5 +1,5 @@
 .program {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
@@ -27,20 +27,21 @@
 
 .program__item {
   position: relative;
+
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 20px;
 
   background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding: 77px 62px 53px 52px;
+    padding: 67px 62px 57px 52px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
+      padding: 67px 62px 61px 52px;
     }
   }
 
@@ -58,8 +59,8 @@
 
     @media (min-width: $tablet-width) {
       top: 92px;
-      left: auto;
       right: 61px;
+      left: auto;
 
       width: 200px;
       height: 200px;
@@ -97,8 +98,9 @@
 
     @media (min-width: $tablet-width) {
       top: 81px;
-      left: auto;
       right: 92px;
+      left: auto;
+
       width: 140px;
       height: 194px;
     }
@@ -106,6 +108,7 @@
     @media (min-width: $desktop-width) {
       top: 41px;
       left: 67px;
+
       width: 70px;
       height: 97px;
     }
@@ -129,18 +132,22 @@
 
     @media (min-width: $tablet-width) {
       top: 135px;
-      left: auto;
       right: 28px;
+      left: auto;
+
       width: 268px;
       height: 112px;
+
       background-size: 268px 112px;
     }
 
     @media (min-width: $desktop-width) {
       top: 67px;
       left: 33px;
+
       width: 134px;
       height: 56px;
+
       background-size: 134px 56px;
     }
   }
@@ -148,12 +155,12 @@
 
 .program__title {
   margin: 0;
+  margin-top: 10px;
   padding: 0 0 29px 71px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -173,7 +180,9 @@
 }
 
 .program__description {
-  padding-bottom: 23px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 22px;
 
   font-size: 14px;
   line-height: 18px;
@@ -183,6 +192,7 @@
   border-bottom: 1px solid $color-gainsboro;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     padding-right: 254px;
 
     font-size: 16px;
@@ -199,9 +209,9 @@
 
 .program__catalog-link {
   position: relative;
-  margin-top: auto;
-  align-self: start;
 
+  align-self: start;
+  margin-top: auto;
   padding-right: 57px;
 
   font-size: 16px;

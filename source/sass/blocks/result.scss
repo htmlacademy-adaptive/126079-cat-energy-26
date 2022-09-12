@@ -13,23 +13,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 75px;
+    padding: 23px 0 65px;
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      top: 56%;
+      top: 57%;
       right: 0;
       bottom: 0;
       left: 0;
 
-      background-color: $color-whisper-light;
+      background-color: $color-white-smoke;
     }
 
     @media (min-width: $desktop-width) {
-      top: 28%;
+      top: 26%;
       z-index: -1;
     }
   }
@@ -62,7 +62,7 @@
 .result__list {
   display: grid;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
 
   gap: 32px;
@@ -93,8 +93,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
     max-width: 650px;
+    margin-bottom: 76px;
   }
 }
 
@@ -116,7 +116,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
-    padding-top: 70px;
+    margin-bottom: 69px;
+    padding-top: 71px;
   }
 }
 
@@ -135,11 +136,12 @@
 }
 
 .result__info {
-  padding: 15px 15px 18px;
+  padding: 15px;
 
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
 
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
@@ -154,12 +156,12 @@
 
 .result__name {
   position: absolute;
-  width: min-content;
-  top: 80%;
+  top: 82%;
   left: 50%;
   z-index: 2;
 
-  padding: 0 15px;
+  width: min-content;
+  padding: 0 13px;
 
   font-size: 12px;
   line-height: 12px;
@@ -171,11 +173,11 @@
   transform: translateX(-100%);
 
   @media (min-width: $tablet-width) {
-    width: max-content;
-    max-width: 130px;
     top: 76%;
     left: 25%;
 
+    width: max-content;
+    max-width: 130px;
     padding: 0 5px;
 
     font-size: 14px;
@@ -207,7 +209,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-top: 55px;
+    margin-top: 52px;
     padding: 0;
 
     text-align: start;

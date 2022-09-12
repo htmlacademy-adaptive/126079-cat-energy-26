@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
-    margin: 51px auto 0;
+    margin: 37px auto 0;
 
     background-color: $color-transparent;
   }
@@ -26,12 +26,15 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-    padding-left: 60px;
+    margin: 13px 0 20px;
+    padding-left: 97px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 2;
+
+    margin: 0;
+    padding: 0 58px;
   }
 }
 
@@ -71,41 +74,42 @@
 
   @media (min-width: $tablet-width) {
     top: -83px;
-    left: 53px;
+    left: 65px;
 
-    width: 709px;
+    width: 674px;
     height: auto;
-    margin-bottom: -83px;
+    margin-bottom: -107px;
+
     background-color: $color-transparent;
   }
 
   @media (min-width: $desktop-width) {
-    top: -90px;
     position: absolute;
+    top: -57px;
     left: 36.6%;
-    margin-bottom: 0;
 
     width: 552px;
     height: 499px;
+    margin-bottom: 0;
   }
 }
 
 .promo__title {
+  max-width: 340px;
   margin: 0 auto;
   padding: 27px 10px 14px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  max-width: 340px;
 
   @media (min-width: $tablet-width) {
-    margin: 60px 0 0;
+    max-width: 420px;
+    margin: 0;
     padding: 20px;
 
     font-size: 60px;
     line-height: 60px;
-    max-width: 420px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,33 +120,39 @@
 
 .promo__intro {
   margin: 0;
-  margin-bottom: 16px;
-  padding: 13px 20px;
+  margin-bottom: 18px;
+  padding: 11px 20px;
 
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 400px;
     margin-bottom: 29px;
+    padding: 21px 20px;
 
     font-size: 20px;
     line-height: 20px;
-    max-width: 400px;
   }
 }
 
 .button.promo__button {
   display: block;
-  width: 100%;
+  box-sizing: border-box;
+  min-height: 40px;
+  margin: 0 20px;
   padding: 7px 0;
+
+  font-size: 14px;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 3;
-    margin-left: 80px;
 
     width: 244px;
+    margin-left: 120px;
     padding: 17px 0;
 
     font-size: 20px;
@@ -150,6 +160,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 79px;
     padding: 14px 0;
+
+    line-height: 26px;
   }
 }
