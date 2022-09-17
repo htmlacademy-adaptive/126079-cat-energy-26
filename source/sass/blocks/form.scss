@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
 
     gap: 20px 80px;
     grid-template-columns: repeat(2, 1fr);
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0 31px 28px;
+    padding: 30px 0 31px 28px;
 
     border: 1px solid $color-whisper;
   }
@@ -155,9 +155,14 @@
     margin-bottom: 65px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+
   & .form__field-input {
-    max-width: calc(100% - 30px);
+    width: 100%;
     min-height: 150px;
+    padding-top: 9px;
 
     resize: none;
 
@@ -168,14 +173,14 @@
 }
 
 .form__block-checkbox {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
+    margin-bottom: 65px;
   }
 
   & .form__list {
@@ -188,7 +193,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      gap: 42px 10%;
+      gap: 42px 6.5%;
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -247,7 +252,7 @@
     width: 26px;
     height: 26px;
 
-    background-image: url("../img/mark.svg");
+    background-image: url("../img/background/mark.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -266,7 +271,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
 
-    gap: 42px 61px;
+    gap: 42px 82px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -371,10 +376,6 @@
     box-shadow: inset 0 0 0 1px $color-charcoal;
   }
 
-  &:focus svg {
-    color: $color-red;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 10px 15px 10px 19px;
 
@@ -415,7 +416,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 15px;
+    padding-top: 10px;
+    margin-right: 17px;
   }
 }
 
@@ -535,6 +537,15 @@
 
       background-size: 26px;
     }
+  }
+}
+
+.form__field-input--error:active {
+  box-shadow: inset 0 0 0 1px $color-light-coral;
+  border-color: $color-light-coral;
+
+  & .form__svg {
+    fill: $color-light-coral;
   }
 }
 

@@ -1,9 +1,11 @@
 .header-intro {
+  width: 100%;
+  overflow-x: hidden;
+
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
 
-    width: 100%;
     min-height: 696px;
 
     background-image: linear-gradient(to right, $color-white 50%, rgba($color-apple, 0.85) 50%, rgba($color-apple, 0.85) 50%);
@@ -21,7 +23,7 @@
       left: 50%;
       z-index: -1;
 
-      background-image: linear-gradient(rgba($color-apple, 0.85) 50%, rgba($color-apple, 0.85) 50%), url("../img/promo-cat-full.jpg");
+      background-image: linear-gradient(rgba($color-apple, 0.85) 50%, rgba($color-apple, 0.85) 50%), url("../img/background/promo-cat-full.jpg");
       background-repeat: no-repeat;
     }
   }

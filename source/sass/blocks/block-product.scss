@@ -1,7 +1,7 @@
 .block-product {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
@@ -74,7 +74,7 @@
   color: $color-charcoal;
 
   @media (min-width: $desktop-width) {
-    width: 48%;
+    width: 47%;
     min-width: 200px;
     margin-left: auto;
   }

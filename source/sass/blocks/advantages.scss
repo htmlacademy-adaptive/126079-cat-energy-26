@@ -103,19 +103,19 @@
   }
 
   &--healthy::after {
-    background-image: url("../img/advantages-leaf.svg");
+    background-image: url("../img/background/advantages-leaf.svg");
   }
 
   &--simply::after {
-    background-image: url("../img/advantages-tub.svg");
+    background-image: url("../img/background/advantages-tub.svg");
   }
 
   &--tasty::after {
-    background-image: url("../img/advantages-eat.svg");
+    background-image: url("../img/background/advantages-eat.svg");
   }
 
   &--fast::after {
-    background-image: url("../img/advantages-alarm.svg");
+    background-image: url("../img/background/advantages-alarm.svg");
   }
 
   @media (min-width: $tablet-width) {

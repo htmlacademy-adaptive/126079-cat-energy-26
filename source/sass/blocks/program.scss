@@ -41,7 +41,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
-      padding: 67px 62px 61px 52px;
+      padding: 67px 55px 61px 52px;
     }
   }
 
@@ -91,7 +91,7 @@
     width: 36px;
     height: 50px;
 
-    background-image: url("../img/cat-slim.svg");
+    background-image: url("../img/background/cat-slim.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -125,7 +125,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url("../img/cat-pro.svg");
+    background-image: url("../img/background/cat-pro.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -221,12 +221,16 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/background/arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 8px center;
+  background-position: right 15px center;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 8px center;
+  }
 
   &:hover {
-    background-image: url("../img/arrow-active.svg");
+    background-image: url("../img/background/arrow-active.svg");
     background-position: right center;
   }
 

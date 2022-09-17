@@ -16,7 +16,7 @@
   background-color: $color-white-smoke;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 60px;
+    padding: 58px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,7 @@
     display: grid;
     box-sizing: border-box;
     width: 565px;
-    padding: 56px 80px 61px;
+    padding: 58px 80px 61px;
 
     background-color: $color-white;
 
@@ -40,7 +40,7 @@
 }
 
 .address__title {
-  width: 140px;
+  width: 139px;
   margin: 0;
   padding: 0;
 
@@ -61,7 +61,7 @@
 .address__text {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 141px;
 
   font-size: 14px;
   line-height: 20px;

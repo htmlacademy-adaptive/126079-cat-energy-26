@@ -10,10 +10,6 @@
     padding: 34px 36px 39px;
     background-color: $color-white-smoke;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 40px 38px;
-  }
 }
 
 .card-product__wrapper {
@@ -50,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 150px;
-    margin: 0 auto 10px;
+    margin: 0 auto 14px;
 
     font-size: 20px;
     line-height: 24px;
@@ -96,14 +92,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
 
     border-bottom: 1px solid $color-very-light-grey;
   }
 }
 
 .card-product__text {
-  margin: 0 0 21px;
+  margin: 0 0 24px;
 
   font-size: 12px;
   line-height: 16px;
@@ -124,6 +120,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin: 0 auto 85px;
   }
 }
 
@@ -138,9 +135,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -120px auto 46px;
+    margin: -115px auto 36px;
     width: 172px;
-    height: 196px;
+    height: 205px;
   }
 }
 
