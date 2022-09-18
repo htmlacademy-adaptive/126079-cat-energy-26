@@ -8,7 +8,12 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 34px 36px 39px;
+
     background-color: $color-white-smoke;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 36px 39px 40px;
   }
 }
 
@@ -55,6 +60,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 10px;
+
+    line-height: 21px;
   }
 }
 
@@ -65,8 +72,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 134px;
+    max-width: 155px;
     margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -103,8 +114,8 @@
 
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
   font-family: $ff-arial;
+  text-align: center;
   color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
@@ -119,8 +130,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto 60px;
     padding: 0;
-    margin: 0 auto 85px;
   }
 }
 
@@ -135,22 +146,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -115px auto 36px;
     width: 172px;
     height: 205px;
+    margin: -115px auto 41px;
   }
 }
 
 .card-product__button {
-  box-sizing: border-box;
   min-height: 40px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .card-product__button--more {
   width: auto;
 
-  color: $color-charcoal;
   font-size: 16px;
+  color: $color-charcoal;
 
   background-color: $color-white-smoke;
 
@@ -167,11 +180,16 @@
 
 .card-product--more {
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    justify-content: space-between;
 
     background-color: $color-white;
     background-image: none;
     border: 2px solid $color-white-smoke;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 21px 36px 39px;
   }
 }
 
@@ -204,6 +222,10 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin-bottom: 49px;
+    margin: 16px auto 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 29px auto 28px;
   }
 }

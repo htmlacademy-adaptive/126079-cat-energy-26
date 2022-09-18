@@ -1,17 +1,15 @@
 .main-nav {
+  .no-js & {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }
 
-.main-nav--closed .main-nav__list {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.main-nav--closed .main-nav__toggle {
+.main-nav__toggle {
   position: absolute;
   right: 0;
 
@@ -44,46 +42,26 @@
   &::after {
     bottom: 14px;
   }
-}
 
-.main-nav--opened .main-nav__toggle {
-  position: absolute;
-  right: 0;
-
-  width: 52px;
-  height: 44px;
-
-  background-color: $color-transparent;
-  border: none;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 14px;
-
-    width: 24px;
-    height: 2px;
-
-    background-color: $color-black;
+  .no-js & {
+    display: none;
   }
 
-  &::before {
-    top: 14px;
+  .is-open & {
+    &::before {
+      top: 14px;
 
-    box-shadow: none;
-    transform: translateY(7px) rotate(-45deg);
+      box-shadow: none;
+      transform: translateY(7px) rotate(-45deg);
+    }
+
+    &::after {
+      bottom: 14px;
+
+      transform: translateY(-7px) rotate(45deg);
+    }
   }
 
-  &::after {
-    bottom: 14px;
-
-    transform: translateY(-7px) rotate(45deg);
-  }
-}
-
-.main-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -95,6 +73,7 @@
   left: 0;
   z-index: 3;
 
+  display: none;
   margin: 0;
   margin-top: 53px;
   padding: 0;
@@ -103,6 +82,22 @@
 
   background-color: $color-white;
   border-bottom: 1px solid $color-whisper;
+
+  .no-js & {
+    position: static;
+
+    display: block;
+    width: 100%;
+    margin-top: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
+  }
+
+  .is-open & {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -137,7 +132,7 @@
 
   &:last-of-type .main-nav__link {
     @media (min-width: $desktop-width) {
-      margin-right: -17px;
+      margin-right: -18px;
     }
   }
 
@@ -162,22 +157,40 @@
 }
 
 .main-nav__item--current {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      right: 18px;
+      bottom: -8px;
+      left: 18px;
+
+      height: 2px;
+
+      background-color: $color-apple;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
   }
 }
 
-.main-nav__item--current::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    right: 17px;
-    bottom: -8px;
-    left: 17px;
+.main-nav__item--current-form {
+  position: relative;
 
-    height: 2px;
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      left: 18px;
 
-    background-color: $color-apple;
+      height: 2px;
+
+      background-color: $color-apple;
+    }
   }
 }
 
@@ -188,7 +201,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 17px;
+    padding: 15px 18px;
 
     font-weight: 400;
     font-size: 18px;
