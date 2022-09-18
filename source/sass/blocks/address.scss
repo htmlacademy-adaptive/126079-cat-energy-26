@@ -86,6 +86,37 @@
   }
 }
 
+.address__map::before {
+  content: "";
+  position: absolute;
+  top: 59%;
+  left: 51%;
+
+  width: 56px;
+  height: 52px;
+
+  background-color: $color-transparent;
+  background-image: url("../img/background/map-pin.png");
+  background-repeat: no-repeat;
+  background-size: 56px 52px;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    top: 67%;
+
+    width: 113px;
+    height: 106px;
+
+    background-size: 113px 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 46%;
+    left: 67%;
+    z-index: 2;
+  }
+}
+
 .address__map-iframe {
   display: block;
   width: 100%;

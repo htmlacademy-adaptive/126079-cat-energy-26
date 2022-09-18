@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+
+    <!-- Шапка -->
+
+    <header class="main-header no-js">
       <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1024px)" srcset="img/content/logo-desktop.svg">
@@ -24,7 +27,7 @@
           <img class="main-header__logo-image" src="img/content/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -35,27 +38,34 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item main-nav__item--current main-nav__item--current-form">
             <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Поля формы -->
+
     <main class="main-container">
       <section class="form-container container">
         <h1 class="form-container__title">Подбор программы</h1>
         <p class="form-container__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <!-- О коте -->
+
           <div class="form__block form__block-radio-pet">
             <div class="form__block form__block-pet">
               <h2 class="visually-hidden">Данные кота</h2>
               <label class="form__field">
                 <span class="form__field-label form__label">Имя:*</span>
-                <input class="form__field-input form__field-input--error" type="text" name="form-field-name" placeholder="барсик" required>
+                <!-- Для добавления состояния ошибки используется класс has-error -->
+                <input class="form__field-input" type="text" name="form-field-name" placeholder="барсик" required>
               </label>
               <label class="form__field">
                 <span class="form__field-label form__label">Вес (кг):*</span>
-                <input class="form__field-input form__field-input--error" type="number" name="form-field-weight" placeholder="7" required>
+                <input class="form__field-input" type="number" name="form-field-weight" placeholder="7" required>
               </label>
               <label class="form__field">
                 <span class="form__field-label form__label">Возраст (лет):</span>
@@ -89,31 +99,37 @@
               </ul>
             </div>
           </div>
+
+          <!-- О заказчике -->
+
           <div class="form__block form__block-user">
             <div class="form__title-line">
-              <h2 class="form__title">Контактные данные<br> (владельца кота)</h2>
+              <h2 class="form__title">Контактные данные<br>&nbsp;(владельца кота)</h2>
             </div>
             <div class="form__list">
               <label class="form__field">
                 <span class="form__field-label form__label">E-mail:*</span>
-                <input class="form__field-input form__field-input--error" type="email" name="form-email" placeholder="kuklachev@gmail.com" required>
-                <div class="form__field-icon form__field-icon--email">
+                <input class="form__field-input" type="email" name="form-email" placeholder="kuklachev@gmail.com" required>
+                <span class="form__field-icon form__field-icon--email">
                   <svg class="form__svg" width="20" height="15">
                     <use href="img/sprite.svg#icon-email"></use>
                   </svg>
-                </div>
+                </span>
               </label>
               <label class="form__field">
                 <span class="form__field-label form__label">Телефон:*</span>
-                <input class="form__field-input form__field-input--error" type="tel" name="form-tel" placeholder="8 (960) 900-60-90" required>
-                <div class="form__field-icon form__field-icon--phone">
+                <input class="form__field-input" type="tel" name="form-tel" placeholder="8 (960) 900-60-90" required>
+                <span class="form__field-icon form__field-icon--phone">
                   <svg class="form__svg" width="20" height="21">
                     <use href="img/sprite.svg#icon-phone"></use>
                   </svg>
-                </div>
+                </span>
               </label>
             </div>
           </div>
+
+          <!-- Комментарий -->
+
           <div class="form__block form__block-textarea">
             <div class="form__title-line">
               <h2 class="form__title">Комментарий</h2>
@@ -122,6 +138,9 @@
               <textarea class="form__field-input" name="form-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
+
+          <!-- Дополнительные товары -->
+
           <div class="form__block form__block-checkbox">
             <div class="form__title-line">
               <h2 class="form__title">Дополнительно</h2>
@@ -157,12 +176,18 @@
               </li>
             </ul>
           </div>
+
+          <!-- Отправить -->
+
           <div class="form__block form__block-button">
             <button class="button form__button" type="submit">Отправить заявку</button>
             <p class="form__button-description">* — Обязательные поля</p>
           </div>
         </form>
       </section>
+
+      <!-- Адрес -->
+
       <section class="address">
         <div class="address__wrapper">
           <h2 class="address__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
@@ -177,6 +202,9 @@
         </div>
       </section>
     </main>
+
+    <!-- Футер -->
+
     <footer class="main-footer">
       <div class="container main-footer__wrapper">
         <a class="main-footer__link" href="index.html">

@@ -2,13 +2,12 @@
   position: relative;
   z-index: -1;
 
-  box-sizing: border-box;
   height: 100%;
   min-height: 288px;
   margin-bottom: 35px;
   padding: 35px 20px;
 
-  background-image: linear-gradient(rgba($color-apple, 0.85), rgba($color-apple, 0.85)), url("../img/background/advertising-cat.png");
+  background-image: linear-gradient(rgba($color-apple, 0.85), rgba($color-apple, 0.85)), url("../img/background/cat-in-bag.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,6 +44,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: auto;
     min-height: 200px;
     margin-bottom: 76px;
     padding: 0;
@@ -69,13 +69,16 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 124px 69px 60%;
+    margin-left: 60%;
+    padding-top: 70px;
 
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 20px 42px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 185px 17px 42px;
 
     text-align: center;
   }
