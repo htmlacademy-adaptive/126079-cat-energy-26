@@ -26,7 +26,7 @@
     display: grid;
     box-sizing: border-box;
     width: 565px;
-    padding: 58px 80px 61px;
+    padding: 60px 80px;
 
     background-color: $color-white;
 
@@ -43,6 +43,7 @@
   width: 139px;
   margin: 0;
   padding: 0;
+  padding-right: 8px;
 
   font-weight: 400;
   font-size: 16px;
@@ -62,6 +63,7 @@
   display: flex;
   flex-direction: column;
   width: 141px;
+  padding-left: 5px;
 
   font-size: 14px;
   line-height: 20px;
@@ -76,6 +78,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -3px;
+
     text-align: start;
   }
 }

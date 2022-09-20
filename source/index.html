@@ -12,6 +12,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -53,6 +54,8 @@
           </div>
           <div class="promo__block">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-index-tablet.webp 1x, img/content/promo-index-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/promo-index-mobile.webp 1x, img/content/promo-index-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/content/promo-index-tablet.png 1x, img/content/promo-index-tablet@2x.png 2x">
               <img class="promo__image" src="img/content/promo-index-mobile.png" srcset="img/content/promo-index-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания для котов.">
             </picture>
@@ -96,7 +99,7 @@
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--fast">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже&nbsp;через&nbsp;месяц&nbsp;наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
           </li>
         </ul>
       </section>
@@ -123,7 +126,7 @@
               </dl>
               <div class="result__sum">
                 <span class="result__sum-info">Затраты на питание:</span>
-                <span>15 000 РУБ.</span>
+                <span class="result__price">15 000 РУБ.</span>
               </div>
             </div>
           </div>
@@ -131,16 +134,20 @@
             <div class="slider__before">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/cat-before-tablet.webp 1x, img/content/cat-before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/cat-before-tablet.webp 1x, img/content/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/cat-before-mobile.webp 1x, img/content/cat-before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/content/cat-before-tablet.png 1x, img/content/cat-before-tablet@2x.png 2x">
                 <img class="slider__before-image slider__image" src="img/content/cat-before-mobile.png" srcset="img/content/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пухлый кот до смены рациона.">
               </picture>
             </div>
             <div class="slider__range">
-              <button class="slider__range-button" type="button"></button>
+              <button class="slider__range-button" type="button">
+                <span class="visually-hidden">Ползунок для демонстрации котов до и после</span>
+              </button>
             </div>
             <div class="slider__after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/content/cat-after-tablet.webp 1x, img/content/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/cat-after-mobile.webp 1x, img/content/cat-after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/content/cat-after-tablet.png 1x, img/content/cat-after-tablet@2x.png 2x">
                 <img class="slider__after-image slider__image" src="img/content/cat-after-mobile.png" srcset="img/content/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после смены рациона.">
               </picture>
@@ -170,7 +177,7 @@
 
     <footer class="main-footer">
       <div class="container main-footer__wrapper">
-        <a class="main-footer__link main-footer__link--current" aria-label="Логотип Cat Energy">
+        <a class="main-footer__link main-footer__link--current" href="#" aria-label="Переход на главную страницу">
           <svg class="main-footer__logo" width="128" height="24">
             <use href="img/sprite.svg#logo-text"></use>
           </svg>
@@ -178,21 +185,21 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy во VKontakte">
+              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy во VKontakte" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница HTML Academy на Youtube">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница HTML Academy на Youtube" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница HTML Academy в Telegramm">
+              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница HTML Academy в Telegramm" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-telegram"></use>
                 </svg>
@@ -201,7 +208,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" target="_blank">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__svg" width="27" height="34">
               <use href="img/sprite.svg#htmlacademy"></use>

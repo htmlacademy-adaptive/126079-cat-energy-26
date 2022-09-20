@@ -23,8 +23,14 @@
       left: 50%;
       z-index: -1;
 
+      background-color: $color-apple;
       background-image: linear-gradient(rgba($color-apple, 0.85) 50%, rgba($color-apple, 0.85) 50%), url("../img/background/promo-cat-full.jpg");
       background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: linear-gradient(rgba($color-apple, 0.85) 50%, rgba($color-apple, 0.85) 50%), url("../img/background/promo-cat-full@2x.jpg");
+      }
     }
   }
 }

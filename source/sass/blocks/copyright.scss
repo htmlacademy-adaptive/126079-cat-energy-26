@@ -1,5 +1,6 @@
 .copyright__text {
   align-self: center;
+  max-width: 200px;
   margin: 0;
   padding: 0;
   padding-right: 22px;
@@ -18,6 +19,14 @@
 
   text-decoration: none;
 
+  &:hover svg {
+    fill: $color-apple;
+  }
+
+  &:active svg {
+    fill: $color-apple;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -30,12 +39,4 @@
 
 .copyright__svg {
   fill: $color-dim-gray;
-
-  &:hover {
-    fill: $color-apple;
-  }
-
-  &:active {
-    fill: $color-apple;
-  }
 }

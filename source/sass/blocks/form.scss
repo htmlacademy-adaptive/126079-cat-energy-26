@@ -16,13 +16,13 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 
     gap: 20px 80px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  & .form__block {
+  .form__block {
     margin: 0;
   }
 }
@@ -42,7 +42,7 @@
 .form__block-radio {
   position: relative;
 
-  padding: 29px 0 23px;
+  padding: 28px 0 23px;
 
   &::after,
   &::before {
@@ -66,12 +66,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0 25px 28px;
+    padding: 30px 28px 28px;
 
     border: 1px solid $color-whisper;
   }
 
-  & .form__label-radio {
+  .form__label-radio {
     margin: 0;
     padding: 0;
 
@@ -86,40 +86,63 @@
 }
 
 .form__block-user {
-  margin: 26px 0 24px;
+  margin: 28px 0 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin: 0 0 67px;
   }
 
-  & br {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  & .form__list {
+  .form__list {
     @media (min-width: $desktop-width) {
       display: grid;
 
-      gap: 20px 80px;
+      gap: 20px 75px;
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  & .form__field-input:focus + .form__field-icon {
+  .form__field-input {
+    @media (min-width: $desktop-width) {
+      padding: 9px 15px 10px 20px;
+    }
+  }
+
+  .form__field-input:focus + .form__field-icon {
     color: $color-apple;
   }
 
-  & .form__field {
+  .form__field {
     position: relative;
+
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
 
     @media (min-width: $desktop-width) {
       margin: 0;
+    }
+  }
+
+  .form__title {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  .form__label {
+    margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 16px;
+      padding-top: 10px;
     }
   }
 }
@@ -127,7 +150,7 @@
 .form__field-icon {
   position: absolute;
   top: 50%;
-  right: 17px;
+  right: 13px;
 
   width: 20px;
   height: 21px;
@@ -138,9 +161,13 @@
   cursor: pointer;
 
   &--email {
-    right: 19px;
+    right: 15px;
 
     height: 14px;
+
+    @media (min-width: $desktop-width) {
+      right: 20px;
+    }
   }
 }
 
@@ -156,10 +183,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
-  & .form__field-input {
+  .form__field-input {
     width: 100%;
     min-height: 150px;
     padding-top: 9px;
@@ -183,7 +210,7 @@
     margin-bottom: 65px;
   }
 
-  & .form__list {
+  .form__list {
     @media (min-width: $tablet-width) {
       display: grid;
       margin-bottom: 0;
@@ -198,23 +225,21 @@
     }
   }
 
-  & .form__item {
+  .form__item {
     @media (min-width: $tablet-width) {
       margin: 0;
     }
   }
 
-  & .form__title {
+  .form__title {
     @media (min-width: $tablet-width) {
       margin-bottom: 62px;
     }
   }
 
-  & .form__label-checkbox {
+  .form__label-checkbox {
     margin: 0;
     padding: 0;
-
-    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       min-width: 221px;
@@ -228,7 +253,6 @@
 .form__checkbox-input {
   &:hover + .form__mark-checkbox {
     border-color: $color-silver;
-    cursor: pointer;
   }
 
   &:focus + .form__mark-checkbox {
@@ -246,7 +270,7 @@
   &:checked + .form__mark-checkbox::after {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 4px;
 
     width: 26px;
@@ -256,7 +280,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 11px;
+      top: 9px;
       left: 8px;
 
       width: 40px;
@@ -290,7 +314,7 @@
     box-sizing: border-box;
     min-height: 52px;
     margin: 0;
-    padding: 13px 0;
+    padding: 13px;
 
     font-size: 20px;
   }
@@ -319,6 +343,7 @@
 
 .form__title {
   width: max-content;
+  max-width: 81%;
   margin: 0 0 38px -22px;
   padding: 0 22px;
 
@@ -329,6 +354,7 @@
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
+    max-width: 95%;
     margin: 0 0 76px -40px;
     padding: 0 40px;
 
@@ -388,6 +414,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 15px 10px 18px;
+  }
 }
 
 .form__list {
@@ -428,15 +458,19 @@
 }
 
 .form__field-label {
-  min-width: max-content;
-  max-width: 150px;
+  width: fit-content;
+  max-width: 40%;
 
   @media (min-width: $tablet-width) {
-    max-width: 300px;
+    max-width: 50%;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 200px;
+  &--email {
+    min-width: 50px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 63px;
+    }
   }
 }
 
@@ -464,6 +498,8 @@
   display: block;
   padding-left: 46px;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     padding-left: 59px;
   }
@@ -477,12 +513,11 @@
 
   background-color: $color-white;
   border: 1px solid $color-very-light-grey;
-  cursor: pointer;
 }
 
 .form__mark-checkbox {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -507,7 +542,6 @@
 .form__radio-input {
   &:hover + .form__mark-radio {
     border-color: $color-silver;
-    cursor: pointer;
   }
 
   &:focus + .form__mark-radio {
@@ -525,19 +559,17 @@
   &:checked + .form__mark-radio::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 50%;
+    left: 50%;
 
     width: 14px;
     height: 14px;
 
     background-color: $color-apple;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
 
     @media (min-width: $tablet-width) {
-      top: 10px;
-      left: 10px;
-
       width: 18px;
       height: 18px;
 

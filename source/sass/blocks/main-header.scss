@@ -1,6 +1,5 @@
 .main-header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-right: auto;
@@ -9,7 +8,7 @@
 
   border-bottom: 1px solid $color-whisper;
 
-  &.no-js {
+  .no-js {
     padding: 0;
     padding-top: 10px;
 
@@ -28,7 +27,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 60px);
     max-width: 1220px;
     padding: 55px 0 48px;
   }
@@ -43,6 +41,15 @@
     @media (min-width: $tablet-width) {
       padding: 0;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
   }
 }
 
