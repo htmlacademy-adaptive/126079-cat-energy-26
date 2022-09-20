@@ -12,7 +12,8 @@
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="/fonts/*.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -20,7 +21,7 @@
     <!-- Шапка -->
 
     <header class="main-header no-js">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу">
         <picture>
           <source media="(min-width: 1024px)" srcset="img/content/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
@@ -64,11 +65,11 @@
                 <input class="form__field-input" type="text" name="form-field-name" placeholder="барсик" required>
               </label>
               <label class="form__field">
-                <span class="form__field-label form__label">Вес (кг):*</span>
+                <span class="form__field-label form__label">Вес&nbsp;(кг):*</span>
                 <input class="form__field-input" type="number" name="form-field-weight" placeholder="7" required>
               </label>
               <label class="form__field">
-                <span class="form__field-label form__label">Возраст (лет):</span>
+                <span class="form__field-label form__label">Возраст&nbsp;(лет):</span>
                 <input class="form__field-input" type="number" name="form-field-age" placeholder="7">
               </label>
             </div>
@@ -104,11 +105,11 @@
 
           <div class="form__block form__block-user">
             <div class="form__title-line">
-              <h2 class="form__title">Контактные данные<br>&nbsp;(владельца кота)</h2>
+              <h2 class="form__title">Контактные данные (владельца кота)</h2>
             </div>
             <div class="form__list">
               <label class="form__field">
-                <span class="form__field-label form__label">E-mail:*</span>
+                <span class="form__field-label form__field-label--email form__label">E-mail:*</span>
                 <input class="form__field-input" type="email" name="form-email" placeholder="kuklachev@gmail.com" required>
                 <span class="form__field-icon form__field-icon--email">
                   <svg class="form__svg" width="20" height="15">
@@ -207,7 +208,7 @@
 
     <footer class="main-footer">
       <div class="container main-footer__wrapper">
-        <a class="main-footer__link" href="index.html">
+        <a class="main-footer__link" href="index.html" aria-label="Переход на главную страницу">
           <svg class="main-footer__logo" width="128" height="24">
             <use href="img/sprite.svg#logo-text"></use>
           </svg>
@@ -215,21 +216,21 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy во VKontakte">
+              <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Страница HTML Academy во VKontakte" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница HTML Academy на Youtube">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Страница HTML Academy на Youtube" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница HTML Academy в Telegramm">
+              <a class="social__link" href="https://t.me/htmlacademy" aria-label="Страница HTML Academy в Telegramm" target="_blank">
                 <svg class="social__svg" width="28" height="22">
                   <use href="img/sprite.svg#social-telegram"></use>
                 </svg>
@@ -238,7 +239,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" target="_blank">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__svg" width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>

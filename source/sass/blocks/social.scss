@@ -25,14 +25,16 @@
   padding-right: 0;
 }
 
-.social__svg {
-  fill: $color-dim-gray;
-
-  &:hover {
+.social__link {
+  &:hover svg {
     fill: $color-apple;
   }
 
-  &:active {
+  &:active svg {
     fill: rgba($color-apple, 30%);
   }
+}
+
+.social__svg {
+  fill: $color-dim-gray;
 }

@@ -7,10 +7,27 @@
   margin-bottom: 35px;
   padding: 35px 20px;
 
-  background-image: linear-gradient(rgba($color-apple, 0.85), rgba($color-apple, 0.85)), url("../img/background/cat-in-bag.jpg");
+  background-color: $color-dim-gray;
+  background-image: url("../img/background/cat-in-bag.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/cat-in-bag@2x.jpg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    background-image: linear-gradient(rgba($color-apple, 0.85), rgba($color-apple, 0.85));
+  }
 
   &::before {
     content: "";
@@ -48,10 +65,23 @@
     min-height: 200px;
     margin-bottom: 76px;
     padding: 0;
+
+    background-image: url("../img/background/cat-in-bag-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/cat-in-bag-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
+    background-image: url("../img/background/cat-in-bag.jpg");
+    background-position: -34px center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/cat-in-bag@2x.jpg");
+    }
   }
 }
 
@@ -69,8 +99,9 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    margin-left: 60%;
-    padding-top: 70px;
+    margin-left: 59.9%;
+    padding-top: 72px;
+    padding-bottom: 20px;
 
     text-align: start;
   }

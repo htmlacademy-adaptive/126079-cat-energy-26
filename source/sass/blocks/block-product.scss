@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin: 0;
+    margin: 1px 0 -5px;
     padding: 12px 0 12px;
 
     gap: 38px;
@@ -65,7 +65,7 @@
 .block-product__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin: 14px 0 15px;
 
   font-weight: 400;
   font-size: 14px;
@@ -81,7 +81,6 @@
   @media (min-width: $desktop-width) {
     width: 47%;
     min-width: 200px;
-    margin-bottom: 11px;
     margin-left: auto;
   }
 }
@@ -95,6 +94,11 @@
   line-height: 20px;
 
   @media (min-width: $desktop-width) {
+    height: 40px;
+    max-height: max-content;
+    margin-top: 2px;
+    padding: 7px;
+
     line-height: 27px;
   }
 }

@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 6%;
+    gap: 6.4%;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -69,7 +69,7 @@
       content: counter(program-counter);
       position: absolute;
       top: 130px;
-      left: 120px;
+      left: 115px;
       z-index: -1;
 
       font-size: 280px;
