@@ -12,8 +12,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin: 1px 0 -5px;
-    padding: 12px 0 12px;
+    margin: 0;
+    padding: 12px 0 8px;
 
     gap: 38px;
     grid-template-columns: 2.5fr 1fr;
@@ -74,6 +74,8 @@
   color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
+    margin: 16px 0 15px;
+
     font-size: 16px;
     line-height: 20px;
   }

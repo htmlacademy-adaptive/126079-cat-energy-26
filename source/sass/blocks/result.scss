@@ -61,8 +61,7 @@
 
 .result__list {
   display: grid;
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 16px;
   padding: 0;
 
   gap: 32px;
@@ -221,7 +220,7 @@
 }
 
 .result__price {
-  flex-shrink: 0;
+  min-width: 90px;
 }
 
 .result__block {

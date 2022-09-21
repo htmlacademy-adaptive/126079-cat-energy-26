@@ -37,6 +37,7 @@
 
 .additional-products__title {
   width: max-content;
+  max-width: 90%;
   margin: 0;
   margin-bottom: 33px;
   padding: 0;
@@ -57,6 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
     margin-left: -40px;
     padding: 0 40px;
   }

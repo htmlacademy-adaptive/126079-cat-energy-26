@@ -30,13 +30,13 @@
 
     background-color: $color-white;
 
-    gap: 20px 85px;
+    gap: 20px 82px;
     grid-template-columns: 1fr 1fr;
   }
-}
 
-.address__wrapper--index {
-  background-color: $color-white;
+  &--index {
+    background-color: $color-white;
+  }
 }
 
 .address__title {
@@ -53,9 +53,14 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    margin-top: 2px;
 
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -63,7 +68,7 @@
   display: flex;
   flex-direction: column;
   width: 141px;
-  padding-left: 5px;
+  padding-left: 2px;
 
   font-size: 14px;
   line-height: 20px;
@@ -79,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -3px;
+    margin-left: 3px;
 
     text-align: start;
   }
@@ -90,34 +96,75 @@
   }
 }
 
-.address__map::before {
-  content: "";
-  position: absolute;
-  top: 59%;
-  left: 51%;
+.address__map {
+  height: 362px;
 
-  width: 56px;
-  height: 52px;
-
-  background-color: $color-transparent;
-  background-image: url("../img/background/map-pin.png");
+  background-image: url("../img/background/map-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 56px 52px;
-  transform: translate(-50%, -50%);
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background/map-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    top: 67%;
+    height: 396px;
 
-    width: 113px;
-    height: 106px;
+    background-image: url("../img/background/map-tablet.jpg");
 
-    background-size: 113px 106px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    top: 46%;
-    left: 67%;
-    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 100%;
+
+    background-image: url("../img/background/map-desktop.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/map-desktop@2x.jpg");
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58.5%;
+    left: 51%;
+
+    width: 56px;
+    height: 52px;
+
+    background-color: $color-transparent;
+    background-image: url("../img/background/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 56px 52px;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      top: 66%;
+
+      width: 113px;
+      height: 106px;
+
+      background-size: 113px 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46%;
+      left: 66.7%;
+      z-index: 2;
+
+      width: 103px;
+      height: 106px;
+    }
   }
 }
 
@@ -125,6 +172,7 @@
   display: block;
   width: 100%;
 
+  background-color: $color-silver;
   border: none;
 
   @media (min-width: $tablet-width) {
