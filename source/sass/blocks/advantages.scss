@@ -125,6 +125,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  &:last-of-type .advantages__description {
+    @media (min-width: $tablet-width) {
+      min-width: 250px;
+    }
+  }
 }
 
 .advantages__description {

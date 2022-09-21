@@ -92,7 +92,13 @@
     margin-top: 0;
 
     @media (min-width: $tablet-width) {
-      width: 500px;
+      display: flex;
+      width: 88%;
+      margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 82%;
     }
   }
 

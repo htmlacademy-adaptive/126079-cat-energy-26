@@ -1,5 +1,6 @@
 .main-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-right: auto;
@@ -8,16 +9,22 @@
 
   border-bottom: 1px solid $color-whisper;
 
-  .no-js {
+  &.no-js {
     padding: 0;
     padding-top: 10px;
 
     @media (min-width: $tablet-width) {
-      padding: 0;
+      margin: 0 auto;
+      padding: 7px 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 0 48px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
     align-items: flex-end;
     width: calc(100% - 30px);
     margin: 0 auto;
