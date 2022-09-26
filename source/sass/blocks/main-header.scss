@@ -50,6 +50,16 @@
     }
   }
 
+  &:not(&--current) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 174px;
     margin-right: 20px;
@@ -74,12 +84,3 @@
   }
 }
 
-.main-header__logo:not(.main-header__logo--current) {
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}

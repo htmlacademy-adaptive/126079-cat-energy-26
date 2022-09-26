@@ -78,77 +78,76 @@
   &:last-of-type {
     margin-bottom: 0;
   }
-}
 
+  &--slim {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 29px;
 
-.program__item--slim {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 29px;
+      width: 36px;
+      height: 50px;
 
-    width: 36px;
-    height: 50px;
+      background-image: url("../img/background/cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 
-    background-image: url("../img/background/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        right: 92px;
+        left: auto;
 
-    @media (min-width: $tablet-width) {
-      top: 81px;
-      right: 92px;
-      left: auto;
+        width: 140px;
+        height: 194px;
+      }
 
-      width: 140px;
-      height: 194px;
-    }
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 67px;
 
-    @media (min-width: $desktop-width) {
-      top: 41px;
-      left: 67px;
-
-      width: 70px;
-      height: 97px;
+        width: 70px;
+        height: 97px;
+      }
     }
   }
-}
 
-.program__item--pro {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35px;
-    left: 13px;
+  &--pro {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 13px;
 
-    width: 67px;
-    height: 28px;
+      width: 67px;
+      height: 28px;
 
-    background-image: url("../img/background/cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+      background-image: url("../img/background/cat-pro.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 
-    @media (min-width: $tablet-width) {
-      top: 135px;
-      right: 28px;
-      left: auto;
+      @media (min-width: $tablet-width) {
+        top: 135px;
+        right: 28px;
+        left: auto;
 
-      width: 268px;
-      height: 112px;
+        width: 268px;
+        height: 112px;
 
-      background-size: 268px 112px;
-    }
+        background-size: 268px 112px;
+      }
 
-    @media (min-width: $desktop-width) {
-      top: 67px;
-      left: 33px;
+      @media (min-width: $desktop-width) {
+        top: 67px;
+        left: 33px;
 
-      width: 134px;
-      height: 56px;
+        width: 134px;
+        height: 56px;
 
-      background-size: 134px 56px;
+        background-size: 134px 56px;
+      }
     }
   }
 }

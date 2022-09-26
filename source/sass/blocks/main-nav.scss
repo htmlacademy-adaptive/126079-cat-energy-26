@@ -1,12 +1,24 @@
 .main-nav {
-  .no-js & {
-    width: 100%;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     max-width: 50%;
     margin-bottom: 8px;
+
+    &--index {
+      .main-nav__link {
+        color: $color-white;
+      }
+
+      .main-nav__item {
+        &--current::after {
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+
+  .no-js & {
+    width: 100%;
   }
 }
 
@@ -137,11 +149,13 @@
 
   border-top: 1px solid $color-whisper;
 
-  &:last-of-type .main-nav__link {
-    @media (min-width: $desktop-width) {
-      margin-right: -18px;
+  &:not(&--current) {
+    &:hover {
+      opacity: 0.6;
+    }
 
-      white-space: pre;
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -153,55 +167,52 @@
 
     border: none;
   }
-}
 
-.main-nav__item:not(.main-nav__item--current) {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.main-nav__item--current {
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      right: 18px;
-      bottom: -8px;
-      left: 18px;
-
-      height: 2px;
-
-      background-color: $color-apple;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
-}
-
-.main-nav__item--current-form {
-  position: relative;
-
-  &::after {
+  &:last-of-type .main-nav__link {
     @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -8px;
-      left: 18px;
+      margin-right: -18px;
 
-      height: 2px;
+      white-space: pre;
+    }
+  }
 
-      background-color: $color-apple;
+  &--current {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        right: 18px;
+        bottom: -8px;
+        left: 18px;
+
+        height: 2px;
+
+        background-color: $color-apple;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &--current-form {
+    &::after {
+      @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -8px;
+        left: 18px;
+
+        height: 2px;
+
+        background-color: $color-apple;
+      }
     }
   }
 }
+
 
 .main-nav__link {
   padding: 22px 35px 24px;
@@ -221,19 +232,5 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.main-nav--index {
-  .main-nav__link {
-    @media (min-width: $desktop-width) {
-      color: $color-white;
-    }
-  }
-
-  .main-nav__item--current::after {
-    @media (min-width: $desktop-width) {
-      background-color: $color-white;
-    }
   }
 }
